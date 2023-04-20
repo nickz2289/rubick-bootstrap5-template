@@ -1,0 +1,116 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../css/main.css";
+
+// Then add additional custom code here
+
+$color-mode-type: data;
+
+.nav-transparent{
+  background-color: transparent;
+  @extend .shadow-none;
+  transition: background-color 0.5s ease-in-out;
+
+  .nav-link{
+    @extend .text-white;
+    &.active{
+      @extend .text-white;
+      border-bottom: solid white 3px;
+    }
+  }
+
+  &.scroll{
+    .nav-link{
+      @extend .text-dark;
+
+      &.active{
+        @extend .text-primary;
+        border-bottom: solid $primary 3px;
+      }
+    }
+    @extend .bg-white;
+    @extend .shadow-lg;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+
+.bg-gradient-nelson{
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.title-border{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: $headings-margin-bottom*2;
+  &:after{
+    content: '';
+    background: $dark;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    width: 150px;
+    border-radius: 20px;
+  }
+  &.text-center{
+    &:after{
+      margin: auto;
+    }
+  }
+
+  &.border-primary{
+    &:after{
+      background: $primary;
+    }
+  }
+
+  &.border-danger{
+    &:after{
+      background: $danger;
+    }
+  }
+
+  &.border-warning{
+    &:after{
+      background: $warning;
+    }
+  }
+
+  &.border-success{
+    &:after{
+      background: $success;
+    }
+  }
+
+  &.border-info{
+    &:after{
+      background: $info;
+    }
+  }
+
+  &.border-light{
+    &:after{
+      background: $light;
+    }
+  }
+}
+
+@include color-mode(dark) {
+  .nav-transparent.scroll {
+    .nav-link {
+      @extend .text-white;
+      &.active{
+        @extend .text-primary;
+      }
+    }
+    @extend .bg-dark;
+  }
+}
