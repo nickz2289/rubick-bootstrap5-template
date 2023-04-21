@@ -1,6 +1,6 @@
 ![plot](./assets/logo/rubick-full@2x.png)
 
-![https://sly-canidae-c97.notion.site/Introduction-d001d559486d4a778065d2fe82e1c0b6](https://img.shields.io/badge/link-documentation-blue)
+[![documentation](https://img.shields.io/badge/link-documentation-blue)](https://sly-canidae-c97.notion.site/Introduction-d001d559486d4a778065d2fe82e1c0b6)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/nickz2289/rubick-bootstrap5-template/master)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nickz2289/rubick-bootstrap5-template?style=social)
