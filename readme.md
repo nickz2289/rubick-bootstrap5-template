@@ -1,7 +1,9 @@
 ![plot](./assets/logo/rubick-full@2x.png)
 
-[![GitHub tag](https://img.shields.io/github/tag/nickz2289/rubick_bootstrap_5_template?include_prereleases=&sort=semver&color=blue)](https://github.com/nickz2289/rubick_bootstrap_5_template/releases/)
+![https://sly-canidae-c97.notion.site/Introduction-d001d559486d4a778065d2fe82e1c0b6](https://img.shields.io/badge/link-documentation-blue)
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/nickz2289/rubick-bootstrap5-template/master)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+![GitHub Repo stars](https://img.shields.io/github/stars/nickz2289/rubick-bootstrap5-template?style=social)
 
 # Rubick
 ### (Under Highly Development)
